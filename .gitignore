@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+dist/
+npm-debug.log
+
+# Local env files
+.env
+.env.local
+backend/.env
+frontend-build/.env
+
+# Uploaded audit files - use Railway Volume in production
+backend/uploads/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

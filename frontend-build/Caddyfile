@@ -1,0 +1,15 @@
+{
+	admin off
+	auto_https off
+}
+
+:{$PORT:3000} {
+	encode gzip
+
+	@health path /health
+	respond @health "ok" 200
+
+	root * /usr/share/caddy
+	try_files {path} /index.html
+	file_server
+}
